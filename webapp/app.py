@@ -6,8 +6,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    provider = str(os.environ.get('PROVIDER', 'world'))
-    return 'Goodbye '+provider+'!'
+    provider = str(os.environ.get('PROVIDER', 'moon'))
+    return 'Goodnight '+provider+'!'
 
 if __name__ == '__main__':
     # Bind to PORT if defined, otherwise default to 5000.
